@@ -1,32 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bibliomania</title>
-    <link rel="stylesheet" href="scripts/star-rating.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- 🦊 Votre page ici -->
 
-    <!-- 💡 Décommentez cette balise et placez-la dans votre code afin d'afficher le système de note Javascript -->
-    <!-- 
-        <select class="star-rating" aria-label="Note utilisateur">
-            <option value="">Select a rating</option>
-            <option value="5">Excellent</option>
-            <option value="4">Very Good</option>
-            <option value="3">Average</option>
-            <option value="2">Poor</option>
-            <option value="1">Terrible</option>
-        </select>
-    -->
-    <!-- 💡 Script pour gérer le rating d'un livre -->
-    <script src="scripts/star-rating.min.js"></script>
-    <script>
-      var stars = new StarRating(".star-rating", {
-        tooltip: "Choisissez votre note",
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibliomania</title>
+  <link rel="stylesheet" href="scripts/star-rating.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <img src="img/logo.svg" alt="">
+    <h1>Bibliomania</h1>
+  </div>
+  <div class="buttons-lu-lire">
+    <p class="button-lu">Lu</p>
+    <p class="button-a-lire">À lire</p>
+  </div>
+  <img src="img/book_cover.jpeg" alt="Image couverture du livre: Comment je vois le monde">
+  <select class="star-rating" aria-label="Note utilisateur">
+    <option value="">Select a rating</option>
+    <option value="5"></option>
+    <option value="4"></option>
+    <option value="3"></option>
+    <option value="2"></option>
+    <option value="1"></option>
+  </select>
+  <div class="book-main-info">
+    <h2><i>Comment je vois le monde</i></h2>
+    <p>Albert Einstein</p>
+  </div>
+  <div class="buttons-label">
+    <p class="label-kind">Science</p>
+    <p class="label-date">1999</p>
+  </div>
+  <div class="book-description">
+    <p>Lorem ipsum dolor sit amet. Et eligendi dolores qui vitae rerum aut dolor nisi At saepe eaque et dolor nihil ad
+      enim omnis ad maxime odit. Sit doloribus dignissimos ad cumque veritatis qui et dolor nihil ad enim omnis ad
+      maxime odit. Sit doloribus dignissimos ad cumque veritatis qui.</p>
+    <br>
+    <hr />
+  </div>
+  <div class="comments-section">
+    <h3>Commentaires</h3>
+    <div class="add-comment">
+      <p><i>Ajouter un commentaire</i></p>
+      <img src="img/logo-comments.svg">
+    </div>
+    <hr>
+  </div>
+  <div class="comments">
+    <p class="comment"><b>Eric</b> à commenté: Lorem ipsum dolor sit amet. Et eligendi dolores qui vitae </p>
+    <p class="comment"><b>Cécile</b> à commenté: Et eligendi dolores qui vitae rerum aut dolor nisi At saepe eaque et
+      dolor nihil lorem ipsum dolor sit amet. </p>
+    <p class="comment"><b>Jean-Pierre</b> à commenté: Lorem ipsum dolor sit amet. Et eligendi dolores qui vitae rerum
+      aut dolor nisi At saepe eaque et dolor<i><b>afficher plus...</b></i></p>
+    <p class="comment"><b>Andréa</b> à commenté: Lorem ipsum dolor sit amet. Et eligendi dolores qui vitae rerum aut
+      dolor nisi At saepe
+      eaque et dolor nihil ad enim omnis ad <i><b>afficher plus...</b></i></p>
+    <p class="comment"><b>Jacqueline</b> à commenté: Lorem ipsum dolor sit amet. Et eligendi dolores qui vitae rerum
+    </p>
+    <p class="voir-plus"><b><i>voir plus...</i></b></p>
+  </div>
+  <div class="footer">
+    <img src="img/footer.svg">
+  </div>
+
+  <script src="scripts/star-rating.min.js"></script>
+  <script>
+    var stars = new StarRating(".star-rating", {
+      tooltip: false,
+    });
+  </script>
+</body>
+
 </html>
